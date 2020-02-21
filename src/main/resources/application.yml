@@ -1,0 +1,16 @@
+spring:
+    datasource:
+      username: root
+      password: 123456
+      url: jdbc:mysql://127.0.0.1:3306/alpay
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+    jpa:
+      hibernate:
+        #ddl-auto即定义数据表生成的策略     update更新或者创建数据表结构
+        ddl-auto: update
+      #    控制台显示SQL
+      show-sql: true
+
+server:
+  port: 80
